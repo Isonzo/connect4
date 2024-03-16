@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/connect4/static/css/main.7da84639.css",
+    "main.js": "/connect4/static/js/main.5f1f9961.js",
+    "static/js/453.c565b669.chunk.js": "/connect4/static/js/453.c565b669.chunk.js",
+    "static/media/MACHADO.otf": "/connect4/static/media/MACHADO.21fb6b5e8d9e8ace2436.otf",
+    "static/media/MACHADO.ttf": "/connect4/static/media/MACHADO.bafc30fc6e90cef61871.ttf",
+    "index.html": "/connect4/index.html",
+    "main.7da84639.css.map": "/connect4/static/css/main.7da84639.css.map",
+    "main.5f1f9961.js.map": "/connect4/static/js/main.5f1f9961.js.map",
+    "453.c565b669.chunk.js.map": "/connect4/static/js/453.c565b669.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7da84639.css",
+    "static/js/main.5f1f9961.js"
+  ]
+}
