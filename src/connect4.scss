@@ -1,0 +1,103 @@
+// Define some variables for consistency and easy adjustments
+$column-width: 64px;
+$square-size: 60px;
+$square-margin: 2px;
+$border-color: #000;
+$board-margin: 20px;
+
+// colors
+$background-color: #503D2E;
+$text-color: #EFEBC8;
+$highlight-color: #048789;
+
+// hacky stuff for color picking
+:root {
+    --player1Color: #D44D27;
+    --player2Color: #E2A72E;
+}
+
+@font-face {
+    font-family: 'Machado';
+    src: url('./assets/MACHADO.ttf') format('truetype');
+    src: url('./assets/MACHADO.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// change background
+body {
+    background-color: #503D2E;
+    font-family: 'Machado';
+}
+
+// text color
+h1 {
+    color: $text-color;
+}
+h2 {
+    color: $text-color;
+}
+
+.app {
+    // center the title
+    text-align: center;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: $board-margin;
+    margin-bottom: $board-margin;
+}
+
+// Style for the column container
+.column {
+  width: $column-width;
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Centers squares in the column
+  border-radius: 5px;
+
+  // hover effect highlight
+  &:hover {
+    background-color: $highlight-color;
+  }
+
+  // Nested style for squares within a column
+  .square {
+    width: $square-size;
+    height: $square-size;
+    margin: $square-margin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    border-radius: 50%;
+    background-color: $text-color;
+  }
+}
+
+.reset {
+    font-family: 'Machado';
+    background-color: $text-color;
+    color: $background-color;
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $highlight-color;
+        color: $text-color;
+    }
+}
+
+.color-picker{
+    margin-top: 20px;
+    width: 15%;
+    height: 50px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
